@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Mike Buonomo API'),
+    'name' => env('APP_NAME', 'Buonomo API'),
 
     /*
     |--------------------------------------------------------------------------
@@ -52,9 +52,11 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://mike.buonomo.net'),
+    'url' => env('APP_URL', 'https://api.buonomo.net'),
 
     'asset_url' => env('ASSET_URL', null),
+
+    'mike_buonomo_net' => env('APP_URL_MIKE_BUONOMO_NET', 'https://mike.buonomo.net'),
 
     /*
     |--------------------------------------------------------------------------
