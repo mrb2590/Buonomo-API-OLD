@@ -4,6 +4,9 @@ namespace App\Providers;
 
 use Illuminate\Support\Carbon;
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Str;
+use Laravel\Passport\Client;
+use Laravel\Passport\Passport;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -14,6 +17,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
+        Passport::ignoreMigrations();
     }
 
     /**
@@ -25,6 +29,7 @@ class AppServiceProvider extends ServiceProvider
     {
         $this->formatDates();
         $this->checkDatabaseDebugging();
+        $this->usePassportUuid();
     }
 
     /**
@@ -55,5 +60,24 @@ class AppServiceProvider extends ServiceProvider
                 echo $q;
             });
         }
+    }
+
+    /**
+     * Use UUID for Laravel Passport clients.
+     * 
+     * @return void
+     */
+    private function usePassportUuid()
+    {
+        // Auto generate uuid when creating new oauth client
+        Client::creating(function (Client $client) {
+            $client->incrementing = false;
+            $client->id = Str::uuid();
+        });
+
+        // Turn off auto incrementing for passport clients
+        Client::retrieved(function (Client $client) {
+            $client->incrementing = false;
+        });
     }
 }
