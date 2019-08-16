@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container">
-    <div class="row justify-content-center">
+    <div class="row pb-4">
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header">Dashboard</div>
@@ -18,12 +18,18 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="row pb-4">
         <div class="col-md-6">
             <passport-clients></passport-clients>
-            <passport-authorized-clients></passport-authorized-clients>
         </div>
         <div class="col-md-6">
             <passport-personal-access-tokens></passport-personal-access-tokens>
+        </div>
+    </div>
+    <div class="row pb-4">
+        <div class="col-md-12">
+            <passport-authorized-clients></passport-authorized-clients>
         </div>
     </div>
 </div>

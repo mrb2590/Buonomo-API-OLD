@@ -38721,10 +38721,10 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
+  return _c("div", { staticClass: "h-100" }, [
     _vm.tokens.length > 0
-      ? _c("div", [
-          _c("div", { staticClass: "card card-default" }, [
+      ? _c("div", { staticClass: "h-100" }, [
+          _c("div", { staticClass: "card card-default h-100" }, [
             _c("div", { staticClass: "card-header" }, [
               _vm._v("Authorized Applications")
             ]),
@@ -38835,8 +38835,8 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
-    _c("div", { staticClass: "card card-default" }, [
+  return _c("div", { staticClass: "h-100" }, [
+    _c("div", { staticClass: "card card-default h-100" }, [
       _c("div", { staticClass: "card-header" }, [
         _c(
           "div",
@@ -39403,9 +39403,9 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
-    _c("div", [
-      _c("div", { staticClass: "card card-default" }, [
+  return _c("div", { staticClass: "h-100" }, [
+    _c("div", { staticClass: "h-100" }, [
+      _c("div", { staticClass: "card card-default h-100" }, [
         _c("div", { staticClass: "card-header" }, [
           _c(
             "div",

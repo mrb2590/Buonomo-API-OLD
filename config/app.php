@@ -56,7 +56,9 @@ return [
 
     'asset_url' => env('ASSET_URL', null),
 
-    'mike_buonomo_net' => env('APP_URL_MIKE_BUONOMO_NET', 'https://mike.buonomo.net'),
+    'sites' => [
+        'mike' => env('APP_URL_MIKE_BUONOMO_NET', 'https://mike.buonomo.net'),
+    ],
 
     /*
     |--------------------------------------------------------------------------
