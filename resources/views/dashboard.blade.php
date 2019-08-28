@@ -20,12 +20,14 @@
         </div>
     </div>
     <div class="row pb-4">
-        <div class="col-md-6">
+        <div class="col-md-12">
             <passport-clients></passport-clients>
         </div>
-        <div class="col-md-6">
-            <passport-personal-access-tokens></passport-personal-access-tokens>
-        </div>
+    </div>
+    <div class="row pb-4">
+            <div class="col-md-12">
+                <passport-personal-access-tokens></passport-personal-access-tokens>
+            </div>
     </div>
     <div class="row pb-4">
         <div class="col-md-12">

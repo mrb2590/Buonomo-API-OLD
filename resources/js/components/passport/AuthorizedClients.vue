@@ -5,9 +5,9 @@
 </style>
 
 <template>
-    <div class="h-100">
-        <div v-if="tokens.length > 0" class="h-100">
-            <div class="card card-default h-100">
+    <div>
+        <div v-if="tokens.length > 0">
+            <div class="card card-default">
                 <div class="card-header">Authorized Applications</div>
 
                 <div class="card-body">

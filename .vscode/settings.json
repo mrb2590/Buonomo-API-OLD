@@ -3,5 +3,9 @@
     "editor.tabSize": 4,
     "editor.detectIndentation": false,
     "editor.insertSpaces": true,
-    "editor.rulers": [100]
+    "editor.rulers": [
+        80,
+        100,
+        120
+    ]
 }
