@@ -57,7 +57,9 @@ return [
     'asset_url' => env('ASSET_URL', null),
 
     'sites' => [
-        'mike' => env('APP_URL_MIKE_BUONOMO_NET', 'https://mike.buonomo.net'),
+        'mike' => env('APP_URL_MIKE_BUONOMO', 'https://mikebuonomo.com'),
+        'pong' => env('APP_URL_PONG', 'https://pong.buonomo.net'),
+        'brick-breaker' => env('APP_URL_BRICK_BREAKER', 'https://brick-breaker.buonomo.net'),
     ],
 
     /*

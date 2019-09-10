@@ -13,7 +13,10 @@
 
 Route::get('/', 'HomeController@index');
 
-Auth::routes(['verify' => true]);
+Auth::routes([
+    'verify' => true,
+    'register' => false,
+]);
 
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('dashboard', 'HomeController@dashboard')->name('dashboard');

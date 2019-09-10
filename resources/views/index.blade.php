@@ -12,8 +12,8 @@
         <!-- Styles -->
         <style>
             html, body {
-                background-color: #fff;
-                color: #636b6f;
+                background-color: #222;
+                color: #fff;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
                 height: 100vh;
@@ -86,6 +86,8 @@
 
                 <div class="links">
                     <a href="{{ config('app.sites.mike') }}">Mike</a>
+                    <a href="{{ config('app.sites.pong') }}">Pong</a>
+                    <a href="{{ config('app.sites.brick-breaker') }}">Brick Breaker</a>
                 </div>
             </div>
         </div>
